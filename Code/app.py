@@ -10,7 +10,7 @@ class_names = ['Bacterialblight', 'Blast', 'Brownspot', 'Tungro']
 @st.cache_resource()
 # @st.cache_resource(allow_output_mutation=True)
 def load_model():
-  model=tf.keras.models.load_model('/content/drive/MyDrive/Colab Notebooks/DEEP LEARNING/project_Rice_leaf_disease_detection/model/3.keras')
+  model=tf.keras.models.load_model(Model/3.keras)
   return model
 with st.spinner('Model is being loaded..'):
   model=load_model()
